@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hacker", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.heading {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heading--contest {
+  background-color: lightcoral;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+.main-box {
+  background-color: lightblue;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
