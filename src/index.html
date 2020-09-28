@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kelven Rubalaine">
+    <meta name="description" content="Javascript Html & CSS multiplication Game that will test you math skills">
     <link rel="stylesheet" href="/src/css/main.css">
-    <title>Document</title>
+    <title>Multiplication Game | Kelven Rubalaine</title>
 </head>
 <body>
-    <div class="message">
+    <div class="message" id="message">
         <p id="message-text"class="message__text">a message</p>
     </div>
     <div class="main">
         <div class="main-box">
             <h1 class="heading heading__primary">30 seconds</h1>
-            <!-- <h2 class="heading heading__secondary" id="count-show">Cliclou 0 vezes</h2> -->
             <h3 class="heading heading__secondary" id="cont">Waiting For new game</h3>
-            <h2 class="heading heading__primary heading--contest" id="contest">N X N</h2>
+            <h2 class="heading heading__primary heading--contest" id="contest">&nbsp;</h2>
             <div class="button-wraper u-center">
                 <a class="btn btn__start" id='start' href="#">Start</a>
             </div>
             <div  class="button-wrapper button-wraper__grid">
-                <div id="option-1" class="btn btn__option options">0</div>
-                <div id="option-2" class="btn btn__option options">0</div>
-                <div id="option-3" class="btn btn__option options">45</div>
-                <div id="option-4" class="btn btn__option options">99</div>
+                <div id="option-1" class="btn btn__option options">&nbsp;</div>
+                <div id="option-2" class="btn btn__option options">&nbsp;</div>
+                <div id="option-3" class="btn btn__option options">&nbsp;</div>
+                <div id="option-4" class="btn btn__option options">&nbsp;</div>
             </div>         
             <div class="score-board">
                 <h2 class="score-board__text" id="score">
@@ -32,7 +33,11 @@
             </div>
             
         </div>
+        <div class="signature">
+            <p class="signature__text">Made By Kelven Rubalaine</p>
+        </div>
     </div>
-    <script src="script/index.js"></script>
+   
+    <script src="script/bundle.js"></script>
 </body>
 </html>

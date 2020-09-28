@@ -17,9 +17,21 @@
         color: $color-white;
         padding: 1rem;
         background-color: $color-secondary;
-        border-radius: 3px;
+        border-radius: 100px;
         box-shadow: $default-shadow;
     }
     margin-bottom: 2rem;
 }
+.signature{
+    z-index: 8000;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    &__text{
+        color: $color-white;
+        font-size: 1.6rem;
 
+    }
+}

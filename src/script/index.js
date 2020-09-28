@@ -1,4 +1,4 @@
-// import message from './message';
+import {message} from './message';
 let timeLeft = 30;
 let isPlaying = false;
 let score;
@@ -10,8 +10,6 @@ let correctAnswer;
 const timerBoard = document.getElementById('cont');
 const scoreBoard = document.getElementById('score');
 const contestBoard = document.getElementById('contest');
-const count = document.getElementById('count');
-const countShow = document.getElementById('count-show');
 const options = document.querySelectorAll('.options');
 
 const start = document.getElementById('start');
@@ -78,11 +76,11 @@ options.forEach(option =>{
             if(option.innerText == correctAnswer){
                 score++;
                 scoreBoard.innerText = `Score: ${score}`;
-                // message('rigt');
+                message('right');
                 generateQuestion(); 
             }
             else{
-                // message('wrong');
+                message('wrong');
                 generateQuestion();
             }
         }

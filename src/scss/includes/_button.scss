@@ -11,8 +11,8 @@
     font-size: 1.3rem;
     font-weight: 700;
     backface-visibility: hidden;
-    border-radius: 5px;
-    
+    border-radius: 100px;
+    box-shadow: $default-shadow;
     &:hover{
         background-color: $color-primary-light;
         transform: translateY(-.1rem);

@@ -6,16 +6,16 @@ export const message = (color)=>{
         messagePlace.innerText = 'Right answer';
     else
         messagePlace.innerText = 'Wrong answer';
-    showMessage();
+    showMessage(color);
     setTimeout(()=>{ 
-        hideMessage();
+        hideMessage(color);
     }, 1000)
 }
-const showMessage = ()=>{
-
+const showMessage = (color)=>{
     messageBox.classList.add(`message--${color}`);
     messageBox.style.display = 'block';
 }
-const hideMessage = ()=>{
+const hideMessage = (color)=>{
     messageBox.style.display = 'none';
+    messageBox.classList.remove(`message--${color}`);
 }
