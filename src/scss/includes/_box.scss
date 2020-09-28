@@ -1,8 +1,12 @@
 .main-box{
-    background-color: lightblue;
+    background-color:$color-white;
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, 0);
-    padding:2rem;
+    padding:4rem;
+    width: 42rem;
+    height: 42rem;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 4rem rgba($color-black, .5);
 }

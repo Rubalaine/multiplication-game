@@ -1,4 +1,25 @@
 .main{
     height: 100vh;
     position: relative;
+    background-image: radial-gradient( $color-primary-dark, $color-primary-light);
+    // background-image: ;
+}
+.button-box{
+    margin-top: 2rem;
+    width: calc(100% - 1px);
+    display: flex;
+    justify-content: space-around;
+}
+.score-board{
+    position: absolute;
+    bottom: 4%;
+    right: 6%;
+   
+    &__text{
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .5rem;
+        font-size: 2rem;
+        color: $text-primary;
+    }
 }

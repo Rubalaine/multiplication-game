@@ -1,0 +1,26 @@
+.btn,
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    display: inline-block;
+    background-color: $text-secondary;
+    // margin: 1rem;
+    padding: 1rem 4rem;
+    color: white;
+    font-family: inherit;
+    transition: all .3s;
+    font-size: 1.3rem;
+    font-weight: 700;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    &:hover{
+        background-color: $color-primary-light;
+        transform: translateY(-.1rem);
+        box-shadow: 1px 1px 4rem rgba($color-black, .3);
+    }
+    &:active{
+        transform: translateY(.1rem);
+        box-shadow: 1px 1px 4rem rgba($color-black, .1);
+    }
+
+}

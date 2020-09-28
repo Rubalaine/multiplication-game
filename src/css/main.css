@@ -10,36 +10,119 @@ html {
 }
 
 body {
-  font-family: "Hacker", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  padding: 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .heading {
-  font-size: 2.4rem;
+  color: #4d4c4c;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading__primary {
+  font-size: 3rem;
+  letter-spacing: .7rem;
+}
+
+.heading__secondary {
+  font-size: 2rem;
+  letter-spacing: .5rem;
+}
+
+.heading__tertiary {
+  font-size: 1.2rem;
 }
 
 .heading--contest {
-  background-color: lightcoral;
+  color: #fff;
+  padding: 1rem;
+  background-color: #a344da;
 }
 
 .main {
   height: 100vh;
   position: relative;
+  background-image: radial-gradient(#0d21ba, #6777ec);
+}
+
+.button-box {
+  margin-top: 2rem;
+  width: calc(100% - 1px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.score-board {
+  position: absolute;
+  bottom: 4%;
+  right: 6%;
+}
+
+.score-board__text {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .5rem;
+  font-size: 2rem;
+  color: #4d4c4c;
 }
 
 .main-box {
-  background-color: lightblue;
+  background-color: #fff;
   position: absolute;
   top: 20%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  padding: 2rem;
+  padding: 4rem;
+  width: 42rem;
+  height: 42rem;
+  border-radius: 3px;
+  -webkit-box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.5);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #646464;
+  padding: 1rem 4rem;
+  color: white;
+  font-family: inherit;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 1.3rem;
+  font-weight: 700;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.btn:hover,
+.btn:link:hover,
+.btn:visited:hover {
+  background-color: #6777ec;
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+  -webkit-box-shadow: 1px 1px 4rem rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 4rem rgba(0, 0, 0, 0.3);
+}
+
+.btn:active,
+.btn:link:active,
+.btn:visited:active {
+  -webkit-transform: translateY(0.1rem);
+          transform: translateY(0.1rem);
+  -webkit-box-shadow: 1px 1px 4rem rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 4rem rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=main.css.map */
