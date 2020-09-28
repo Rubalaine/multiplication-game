@@ -1,10 +1,9 @@
-.btn,
-.btn:link,
-.btn:visited{
+.btn{
+    cursor: pointer;
     text-decoration: none;
     display: inline-block;
     background-color: $text-secondary;
-    // margin: 1rem;
+    margin: 1rem;
     padding: 1rem 4rem;
     color: white;
     font-family: inherit;
@@ -13,14 +12,21 @@
     font-weight: 700;
     backface-visibility: hidden;
     border-radius: 5px;
+    
     &:hover{
         background-color: $color-primary-light;
         transform: translateY(-.1rem);
         box-shadow: 1px 1px 4rem rgba($color-black, .3);
     }
     &:active{
+        background-color: $color-primary;
         transform: translateY(.1rem);
         box-shadow: 1px 1px 4rem rgba($color-black, .1);
     }
-
+    &__start{
+        text-align: center;
+    }
+    &__option{
+        // width: 25%;
+    }
 }

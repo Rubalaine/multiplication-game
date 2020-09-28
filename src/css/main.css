@@ -42,22 +42,15 @@ body {
   color: #fff;
   padding: 1rem;
   background-color: #a344da;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 2.6rem -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 2.6rem -3px rgba(0, 0, 0, 0.4);
 }
 
 .main {
   height: 100vh;
   position: relative;
   background-image: radial-gradient(#0d21ba, #6777ec);
-}
-
-.button-box {
-  margin-top: 2rem;
-  width: calc(100% - 1px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .score-board {
@@ -74,27 +67,51 @@ body {
   color: #4d4c4c;
 }
 
+.u-center {
+  text-align: center;
+}
+
+.button-wraper__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.button-wraper__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+}
+
 .main-box {
   background-color: #fff;
   position: absolute;
   top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
   padding: 4rem;
   width: 42rem;
-  height: 42rem;
+  height: 50rem;
   border-radius: 3px;
   -webkit-box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.5);
           box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.5);
 }
 
-.btn,
-.btn:link,
-.btn:visited {
+.btn {
+  cursor: pointer;
   text-decoration: none;
   display: inline-block;
   background-color: #646464;
+  margin: 1rem;
   padding: 1rem 4rem;
   color: white;
   font-family: inherit;
@@ -107,9 +124,7 @@ body {
   border-radius: 5px;
 }
 
-.btn:hover,
-.btn:link:hover,
-.btn:visited:hover {
+.btn:hover {
   background-color: #6777ec;
   -webkit-transform: translateY(-0.1rem);
           transform: translateY(-0.1rem);
@@ -117,12 +132,45 @@ body {
           box-shadow: 1px 1px 4rem rgba(0, 0, 0, 0.3);
 }
 
-.btn:active,
-.btn:link:active,
-.btn:visited:active {
+.btn:active {
+  background-color: #4456DA;
   -webkit-transform: translateY(0.1rem);
           transform: translateY(0.1rem);
   -webkit-box-shadow: 1px 1px 4rem rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 4rem rgba(0, 0, 0, 0.1);
+}
+
+.btn__start {
+  text-align: center;
+}
+
+.message {
+  display: none;
+  position: absolute;
+  top: 10%;
+  width: 34rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 8000;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 2rem 0;
+  -webkit-box-shadow: 0px 0px 2.6rem -0.3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 2.6rem -0.3rem rgba(0, 0, 0, 0.4);
+}
+
+.message__text {
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+.message--right {
+  background-color: #57db78;
+}
+
+.message--wrong {
+  background-color: #db5757;
 }
 /*# sourceMappingURL=main.css.map */

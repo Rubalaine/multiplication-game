@@ -4,12 +4,6 @@
     background-image: radial-gradient( $color-primary-dark, $color-primary-light);
     // background-image: ;
 }
-.button-box{
-    margin-top: 2rem;
-    width: calc(100% - 1px);
-    display: flex;
-    justify-content: space-around;
-}
 .score-board{
     position: absolute;
     bottom: 4%;
@@ -21,5 +15,22 @@
         letter-spacing: .5rem;
         font-size: 2rem;
         color: $text-primary;
+    }
+}
+.u-center{
+    text-align: center;
+}
+.button-wraper{
+    &__flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__grid{
+        // margin-top: 1rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        justify-items: center;
     }
 }
