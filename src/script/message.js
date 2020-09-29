@@ -1,6 +1,9 @@
 const messageBox = document.getElementById('message');
 const messagePlace = document.getElementById('message-text');
-
+export const resetMessage = ()=>{
+    messageBox.style.display = 'none';
+    messageBox.classList.remove(`message--end`);
+}
 export const message = (color)=>{
     if(color==='right')
         messagePlace.innerText = 'Right answer';
