@@ -9,4 +9,13 @@
     height: 50rem;
     border-radius: 12px;
     box-shadow: $default-shadow-hard;
+    @include responsive (tablet-landscape){
+        width: 50rem;
+        height: 60rem;   
+    }
+    @include responsive (phone){
+        height: 60rem;
+        width: 90%;  
+        transform: translate(-50%, -13%);
+    }
 }

@@ -5,6 +5,15 @@
 }
 html {
     font-size: 62.5%;
+    @include responsive(tablet-landscape) { 
+        font-size: 56.5%;
+    }
+    @include responsive(tablet-portait) { 
+        font-size: 50%;
+    }
+    @include responsive(big-desktop) { 
+        font-size: 75%;
+    }
 }
 body {
     font-family: "Quicksand", sans-serif;
