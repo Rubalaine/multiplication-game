@@ -17,6 +17,9 @@
     backface-visibility: hidden;
     border-radius: 100px;
     box-shadow: $default-shadow;
+    &:visited{
+        background-color: $text-secondary;
+    }
     &:hover{
         background-color: $color-primary-light;
         transform: translateY(-.1rem);

@@ -1,4 +1,4 @@
-import {message} from './message';
+import {message, showScore} from './message';
 let timeLeft = 30;
 let isPlaying = false;
 let score;
@@ -61,6 +61,7 @@ const startCountdown = ()=>{
             stopCountdown();
             isPlaying = false;
             timerBoard.innerText = `time is over`;
+            showScore(score);
         }
     }, 1000)
     

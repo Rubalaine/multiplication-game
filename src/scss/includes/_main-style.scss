@@ -8,7 +8,9 @@
     position: absolute;
     bottom: 4%;
     right: 6%;
-   
+    @include responsive (phone){
+        bottom: 2%;
+    }
     &__text{
         text-transform: uppercase;
         font-weight: 700;
