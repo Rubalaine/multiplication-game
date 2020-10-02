@@ -15,16 +15,21 @@
     font-size: 1.3rem;
     font-weight: 700;
     backface-visibility: hidden;
-    border-radius: 100px;
+    border-radius: 5px;
     box-shadow: $default-shadow;
-    &:visited{
-        background-color: $text-secondary;
-    }
+    // &:visited{
+    //     background-color: $text-secondary;
+    // }
     &:hover{
         background-color: $color-primary-light;
         transform: translateY(-.1rem);
         box-shadow: 1px 1px 4rem rgba($color-black, .3);
+        @include responsive(tablet-landscape){
+            background-color: $text-secondary;
+            transform: translateX(0);
+        }
     }
+   
     &:active{
         background-color: $color-primary;
         transform: translateY(.1rem);
