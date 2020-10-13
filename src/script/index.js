@@ -18,6 +18,7 @@ if (start){
         if (isPlaying === true)
             location.reload();
         else{
+            start.innerText = 'New Game';
             resetMessage();
             isPlaying = true;
             score = 0;
@@ -83,8 +84,11 @@ options.forEach(option =>{
                 generateQuestion(); 
             }
             else{
-                message('wrong');
-                generateQuestion();
+                // message('wrong');
+                stopCountdown();
+                timerBoard.innerText = `your game is over`;
+                showScore(score);
+                // generateQuestion();
             }
         }
         
