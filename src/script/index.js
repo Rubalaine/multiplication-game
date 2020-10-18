@@ -1,4 +1,6 @@
 import {message, showScore, resetMessage} from './message';
+// const wrongAnswerSound = new Audio('wrong.mp3');
+// const rightAnswerSound = new Audio('right.mp3');
 let timeLeft = 30;
 let isPlaying = false;
 let score;
@@ -79,12 +81,15 @@ options.forEach(option =>{
         if(isPlaying === true){
             if(option.innerText == correctAnswer){
                 score++;
+                // rightAnswerSound.play();
                 scoreBoard.innerText = `Score: ${score}`;
                 message('right');
                 generateQuestion(); 
             }
             else{
                 // message('wrong');
+                // wrongAnswerSound.play();
+                isPlaying = false;
                 stopCountdown();
                 timerBoard.innerText = `your game is over`;
                 showScore(score);
