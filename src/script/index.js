@@ -1,5 +1,8 @@
 import {message, showScore, resetMessage} from './message';
-let timeLeft = 30;
+const wrongAnswerSound = document.getElementById('wrongSong');
+const rightAnswerSound = document.getElementById('rightSong');
+
+let timeLeft = 11;
 let isPlaying = false;
 let score;
 let action;
@@ -70,7 +73,7 @@ const startCountdown = ()=>{
 }
 const stopCountdown = ()=>{
     clearInterval(action);
-    timeLeft = 30;
+    timeLeft = 11;
 }
 if(options)
 options.forEach(option =>{
@@ -78,13 +81,18 @@ options.forEach(option =>{
         event.preventDefault();
         if(isPlaying === true){
             if(option.innerText == correctAnswer){
+                stopCountdown();
+                startCountdown();
                 score++;
+                rightAnswerSound.play();
                 scoreBoard.innerText = `Score: ${score}`;
                 message('right');
                 generateQuestion(); 
             }
             else{
                 // message('wrong');
+                wrongAnswerSound.play();
+                isPlaying = false;
                 stopCountdown();
                 timerBoard.innerText = `your game is over`;
                 showScore(score);
