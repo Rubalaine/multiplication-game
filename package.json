@@ -8,17 +8,13 @@
   "scripts": {
     "watch:sass": "node-sass ./src/scss/main.scss ./src/css/main.css -w",
     "build:sass": "node-sass ./src/scss/main.scss ./src/css/main.css --output-style compressed",
-
     "watch:js": "parcel watch ./src/script/index.js --out-dir ./src/script --out-file bundle.js",
     "build:js": "parcel build ./src/script/index.js --out-dir ./src/script --out-file bundle.js"
-
   },
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.14.1"
-  },
-
-  "dependencies": {
+    "node-sass": "^4.14.1",
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "dependencies": {}
 }
